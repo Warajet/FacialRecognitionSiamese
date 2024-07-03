@@ -11,6 +11,7 @@ def read_image(path):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # Converts (Blue-Green-Red) --> (Red-Green-Blue)
     return img
 
+
 def split_data(dir, split = 0.9):
     train_set, test_set = {}, {}
     folders = os.listdir(dir)
